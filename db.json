@@ -1,0 +1,23 @@
+{
+	"english": [
+		{ "id": 1, "category":"day", "ru": "понедельник", "en": "monday", "img":"https://placeimg.com/640/480/tech", "complete": true },
+		{ "id": 2, "category":"day", "ru": "вторник", "en": "tuesday", "img":"https://placeimg.com/640/480/tech", "complete": true },
+		{ "id": 3, "category":"day", "ru": "среда", "en": "wednesday", "img":"https://placeimg.com/640/480/tech", "complete": false },
+		{ "id": 4, "category":"day", "ru": "четверг", "en": "Thursday ", "img":"https://placeimg.com/640/480/tech", "complete": false },
+		{ "id": 5, "category":"day", "ru": "пятница", "en": "friday", "img":"https://placeimg.com/640/480/tech", "complete": false },
+		{ "id": 6, "category":"day", "ru": "суббота", "en": "saturday", "img":"https://placeimg.com/640/480/tech", "complete": false },
+		{ "id": 7, "category":"day", "ru": "воскресенье", "en": "sunday", "img":"https://placeimg.com/640/480/tech", "complete": false }
+  ],
+	"cars": [
+		{ "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+	"posts": [
+		{ "id": 1, "title": "json-server", "author": "typicode" }
+	],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+
