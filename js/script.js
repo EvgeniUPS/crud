@@ -28,6 +28,9 @@ const url = 'http://localhost:3000/english?_limit=3'
 
 document.querySelector('.add-word-btn').addEventListener('click', async () => {
   const addWordInput = document.querySelector('.add-word-input')
+  console.log('add')
+  const pageTitle = document.querySelector('.page-title')
+  pageTitle.innerHTML = addWordInput.value
 })
 
 async function getAllWords() {
