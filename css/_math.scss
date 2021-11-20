@@ -77,18 +77,43 @@
   .training {
   }
 }
+
+//<BLOCK>====================================================================================================
 .training {
   // .training__container
   &__container {
   }
+  &__label {
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
   // .training__item
-  &__item {
+  &__question {
+  }
+  &__answer {
   }
 }
 
-.item-training {
+.question-training {
+  display: flex;
+  justify-content: center;
+  // gap: 5px;
+  // margin-bottom: 20px;
+  cursor: default;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
   // .item-training__item
   &__item {
+    font-size: 24px;
+    // padding: 10px;
+    height: 50px;
+    border: 1px solid #000;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   // .item-training__num1
   &__num1 {
@@ -106,3 +131,24 @@
   &__answer {
   }
 }
+.answer-training {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  &__item {
+    font-size: 24px;
+    height: 50px;
+    border: 1px solid #000;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+      background-color: #006f6f;
+    }
+  }
+}
+//<BLOCK>====================================================================================================
