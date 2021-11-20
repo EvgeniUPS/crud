@@ -16,10 +16,30 @@
 
       <div class="float-btn">add</div>
       <div class="modal-add-data">
-        <input type="text" class="add-word-input" />
-        <button class="add-word-btn">add</button>
+        <div class="modal-add-data__item">
+          <label for="ru">ru</label>
+          <input type="text" id="ru" autofocus value="testRU" />
+        </div>
+        <div class="modal-add-data__item">
+          <label for="en">en</label>
+          <input type="text" id="en" value="testEN" />
+        </div>
+
+        <div class="modal-add-data__item modal-add-data__item_button">
+          <input type="button" value="add" />
+        </div>
       </div>
     </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
+
+<!-- <templates>======================================================================================== -->
+<!-- <div class="word-list__item item-word-list" id="word_${id}">
+  <div class="item-word-list__id">${id}</div>
+
+  <div class="item-word-list__item item-word-list__item_ru">${ru}</div>
+  <div class="item-word-list__item item-word-list__item_en">${en}</div>
+  <input type="checkbox" class="word-list__check" ${complete && 'checked'} />
+  <button class="word-list__delete">X</button>
+</div> -->

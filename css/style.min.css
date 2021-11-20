@@ -117,7 +117,7 @@ h6 {
 
 .word-list__item {
   border: 1px solid #fff;
-  padding: 15px;
+  padding: 5px;
 }
 
 .word-list__delete {
@@ -126,6 +126,7 @@ h6 {
 }
 
 .item-word-list {
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,6 +135,12 @@ h6 {
 
 .item-word-list__item {
   cursor: pointer;
+}
+
+.item-word-list__item:not(:first-child) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
 }
 
 .item-word-list__item::first-letter {
@@ -156,7 +163,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.5;
+  opacity: 0.1;
   background-color: #006f6f;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -167,7 +174,64 @@ h6 {
   opacity: 1;
 }
 
-.modal-add-data input {
-  border: 1px solid tomato;
+.modal-add-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-add-data__item {
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.modal-add-data__item label {
+  padding: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-add-data__item input {
+  font-size: 18px;
+  height: 40px;
+  padding: 5px;
+}
+
+.modal-add-data__item_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.modal-add-data__item_button button {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.modal-add-data__item_button button:hover {
+  background-color: #999;
 }
 /*# sourceMappingURL=style.min.css.map */
