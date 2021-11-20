@@ -95,7 +95,7 @@ function wordToHtml({ id, ru, en, complete }) {
     <input onchange="editWord(${id})" type="checkbox" class="word-list__check" ${
       complete && 'checked'
     } />
-    <button onclick="deleteWord(${id})" class="word-list__delete">X</button>
+    <button onclick="deleteWord(${id})" class="word-list__delete"></button>
   </div>
 	`
   )
