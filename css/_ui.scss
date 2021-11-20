@@ -1,0 +1,41 @@
+$colorGrey: #333;
+._container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  border: 1px solid $colorGrey;
+  &:hover {
+    background-color: teal;
+    color: #fff;
+  }
+  &:disabled {
+    background-color: tomato;
+  }
+  &._active {
+    background-color: #7a956d;
+    color: #fff;
+  }
+}
+.page-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+.visible {
+  // background-color: #ccc;
+}
+
+.hidden {
+  // background-color: #006f6f;
+}
