@@ -39,3 +39,22 @@ $colorGrey: #333;
 .hidden {
   // background-color: #006f6f;
 }
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.wrong-answer {
+  box-shadow: 0 0 5px red;
+  border: 1px solid red !important;
+}
+
+.right-answer {
+  box-shadow: 0 0 5px green;
+  border: 1px solid green !important;
+}

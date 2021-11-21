@@ -159,7 +159,7 @@
           <div class="training__container _container">
             <div class="training__label">Вопрос</div>
 
-            <div class="training__question question-training">
+            <div class="training__question question-training unselectable">
               <div class="question-training__item item-training__num1">2</div>
               <div class="question-training__item item-training__sign">*</div>
               <div class="question-training__item item-training__num2">2</div>
@@ -167,13 +167,23 @@
               <div class="question-training__item item-training__answer"></div>
             </div>
             <div class="training__label">Ответ</div>
-            <div class="training__answer answer-training">
-              <div class="answer-training__item">2</div>
-              <div class="answer-training__item">4</div>
-              <div class="answer-training__item">9</div>
-              <div class="answer-training__item">3</div>
-              <div class="answer-training__item">6</div>
+            <audio id="errorSound" style="display: none">
+              <source src="./error1.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+
+            <div class="training__answer answer-training unselectable">
+              <!-- <div class="answer-training__item right-answer">2</div> -->
+              <!-- <div class="answer-training__item">4</div> -->
+              <!-- <div class="answer-training__item">9</div> -->
+              <!-- <div class="answer-training__item">3</div> -->
+              <!-- <div class="answer-training__item">6</div>  -->
             </div>
+          </div>
+          <!-- <BLOCK>======================================================================================== -->
+          <div class="training__start training-start">
+            <div class="training-start__header">Верно!</div>
+            <button class="training-start__button btn">Следующий пример</button>
           </div>
         </section>
       </div>
