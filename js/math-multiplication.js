@@ -88,7 +88,7 @@ function checkAnswer(rightAnswer) {
     }
   })
 }
-const rightAnswer = createExample(1, 3)
+const rightAnswer = createExample(1, 5)
 
 function newGame() {
   trainingStartBlock.classList.remove('_active')
