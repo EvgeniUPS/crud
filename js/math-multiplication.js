@@ -75,7 +75,7 @@ function checkAnswer(rightAnswer) {
       const selectedAnswer = +e.target.innerHTML
       console.log(`selectedAnswer`, selectedAnswer)
       if (selectedAnswer === rightAnswer) {
-        document.getElementById('errorSound').play()
+        // document.getElementById('errorSound').play()
         answer.innerHTML = rightAnswer
         e.target.classList.add('right-answer')
         trainingStartBlock.classList.add('_active')
