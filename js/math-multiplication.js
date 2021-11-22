@@ -1,5 +1,5 @@
 const minNum = 1
-const maxNum = 9
+const maxNum = 5
 
 function nav() {
   const tableBtn = document.querySelector('.table-btn')
@@ -39,9 +39,10 @@ function createExample(min, max) {
   const num2 = document.querySelector('.item-training__num2')
   num2.innerHTML = randomInteger(min, max)
   const sign = document.querySelector('.item-training__sign')
+  let rightAnswer = ''
 
   if (sign.innerHTML === '*') {
-    let rightAnswer = num1.innerHTML * num2.innerHTML
+    rightAnswer = num1.innerHTML * num2.innerHTML
   } else if (sign.innerHTML === '+') {
     rightAnswer = +num1.innerHTML + +num2.innerHTML
   }
