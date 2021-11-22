@@ -1,3 +1,6 @@
+const minNum = 1
+const maxNum = 9
+
 function nav() {
   const tableBtn = document.querySelector('.table-btn')
   const tableSection = document.querySelector('.table')
@@ -31,14 +34,12 @@ function nav() {
 }
 
 function createExample(min, max) {
-  console.log(99999999999)
   const num1 = document.querySelector('.item-training__num1')
   num1.innerHTML = randomInteger(min, max)
   const num2 = document.querySelector('.item-training__num2')
   num2.innerHTML = randomInteger(min, max)
   const sign = document.querySelector('.item-training__sign')
-  console.log(`num1.value`, +num1.innerHTML)
-  console.log(`num2.value`, +num2.innerHTML)
+
   const rightAnswer = num1.innerHTML * num2.innerHTML
   console.log(`rightAnswer`, rightAnswer)
   return rightAnswer
@@ -80,6 +81,7 @@ function checkAnswer(rightAnswer) {
         e.target.classList.add('right-answer')
         trainingStartBlock.classList.add('_active')
         newGameBtn.addEventListener('click', function (e) {
+          document.querySelector('.item-training__answer').innerHTML = ''
           newGame()
         })
       } else {
@@ -88,17 +90,17 @@ function checkAnswer(rightAnswer) {
     }
   })
 }
-const rightAnswer = createExample(1, 5)
+const rightAnswer = createExample(minNum, maxNum)
 
 function newGame() {
   trainingStartBlock.classList.remove('_active')
+  const rightAnswer = createExample(minNum, maxNum)
+  createAnswerBlock(rightAnswer)
+  checkAnswer(rightAnswer)
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  nav(),
-    console.log(randomInteger(1, 9)),
-    createAnswerBlock(rightAnswer),
-    checkAnswer(rightAnswer)
+  nav(), newGame()
 })
 
 function randomInteger(min, max) {
