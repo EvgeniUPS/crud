@@ -40,7 +40,12 @@ function createExample(min, max) {
   num2.innerHTML = randomInteger(min, max)
   const sign = document.querySelector('.item-training__sign')
 
-  const rightAnswer = num1.innerHTML * num2.innerHTML
+  if (sign.innerHTML === '*') {
+    let rightAnswer = num1.innerHTML * num2.innerHTML
+  } else if (sign.innerHTML === '+') {
+    rightAnswer = +num1.innerHTML + +num2.innerHTML
+  }
+
   console.log(`rightAnswer`, rightAnswer)
   return rightAnswer
 }
