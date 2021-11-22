@@ -41,11 +41,12 @@ function createExample(min, max) {
   const sign = document.querySelector('.item-training__sign')
   let rightAnswer = ''
 
-  if (sign.innerHTML === '*') {
-    rightAnswer = num1.innerHTML * num2.innerHTML
-  } else if (sign.innerHTML === '+') {
-    rightAnswer = +num1.innerHTML + +num2.innerHTML
-  }
+  // if (sign.innerHTML === '*') {
+  //   rightAnswer = num1.innerHTML * num2.innerHTML
+  // } else if (sign.innerHTML === '+') {
+  //   rightAnswer = +num1.innerHTML + +num2.innerHTML
+  // }
+  rightAnswer = num1.innerHTML * num2.innerHTML
 
   console.log(`rightAnswer`, rightAnswer)
   return rightAnswer
